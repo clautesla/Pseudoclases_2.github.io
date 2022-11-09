@@ -1,0 +1,84 @@
+/*para aplicar formularios
+:enabled
+:disabled
+:checked
+:required
+:valid
+:invalid
+:in-range
+:out-of-range
+*/
+
+/*Seleccion de hijos
+:first-child
+:last-child
+:nth-child()
+:first-of-type
+:last-of-type
+*/
+
+/*Pseudoelementos
+::first
+::first-line
+::first-letter
+::selection
+::before
+::after
+*/
+
+input[type="text"]:enabled{
+    background-color: blue;
+    color: white;
+}
+
+input[type="radio"]:checked+label{
+    background-color: blue;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+input:required{
+    background-color: #000;
+    color: #fff;
+}
+
+input:valid{
+    background-color: lightblue;
+}
+
+input:invalid{
+    background-color: #000;
+}
+
+input[type="number"]:in-range{
+    background-color: green;
+    color: black;
+}
+
+input[type="number"]:out-of-range{
+    background-color: pink;
+    color: red;
+}
+
+.lista li:first-child{
+    background-color: blue;
+    color: white;
+}
+
+.lista li:nth-child(4){
+    background-color: blue;
+    color: white;
+}
+ /* even selecciona los números pares y odd los números inpares*/
+ .seccion div:nth-child(even){
+    background-color: red;
+    color: white;
+ }
+
+ .tabla tbody tr:nth-child(odd){
+    background-color: red;
+    color: white;
+ }
+
